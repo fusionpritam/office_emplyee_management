@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d9u)w&jdxqeb6b*wo)x@&)#ihtvxt-a7ume*itimk6akd7ar$)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','office-employee-management.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -126,6 +126,7 @@ STATIC_URL = 'static/'
 MEDIA_URL='images/'
 
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+# STATIC_ROOT=os.path.join(BASE_DIR,'collect')
 
 
 # Default primary key field type

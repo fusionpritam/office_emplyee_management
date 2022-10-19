@@ -3,7 +3,7 @@ import imp
 from multiprocessing import context
 import re
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from . models import employee,Role,Department
 from datetime import datetime
 from django.db.models import Q
@@ -21,6 +21,8 @@ def all_emp(request):
     return render(request, 'all_emp.html',context)
 
 def add_emp(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
     if request.method=='POST':
         first_name=request.POST['first_name']
         last_name=request.POST['last_name']

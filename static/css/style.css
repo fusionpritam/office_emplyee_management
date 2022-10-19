@@ -24,18 +24,22 @@
   .new{
     color: aliceblue;
   }
-  .div1{
-    color: blue;
+  /* .div-new{
     margin-top: 40vh;
     position: relative; 
+  } */
+  .div1{
+    margin-top: 40vh;
+    position: relative; 
+    color: blue;    
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: 1;
   }
   .div3{
-    color:white;
     margin-top: 40vh;
-    position: relative;
+    position: relative; 
+    color:white;
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: 1;
@@ -45,13 +49,19 @@
     50%  {left: -100px !important;background-color: black;} /* ignored */
     to   {left: 0px;background-color: transparent;}
   }
+   /* #k{
+    width: 100%;
+    overflow-x: scroll;
+   } */
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     /* For mobile phones:  making the wesite responsive*/
-    [class*="div"] {
-      margin-left: 20vh;
+    .div-new {
+      background-color:transparent;
+      /* margin-left: 20vh; */
+      margin: 30vh auto 0 auto; /* top right bottom left */
       position: relative;
-      width: 40%;
+      width: 100%;
     }
     
   }

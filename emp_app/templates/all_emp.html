@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +11,9 @@
     <title>all_emp</title>
 </head>
 <body id="all">
-    <div class="text-bg-primary p-3 ">
+    <div class="text-bg-primary p-3 div-new">
         <!-- Content here -->
-      </div>
+      
     <h1 style="color:aliceblue" class="text-center">View all employees!</h1>
     <hr>
     
@@ -22,7 +22,7 @@
     <a class="btn btn-primary" href="/filter_emp" role="button">Filter employees</a>
     <hr>
 
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-dark ">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -56,6 +56,7 @@
         </tbody>
         {% endfor %}
       </table>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
